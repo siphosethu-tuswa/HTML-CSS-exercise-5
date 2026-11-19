@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuswa's Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">TUSWA'S <span class="text-info">STORE</span></a>
+
+      <ul class="navbar-nav flex-row flex-wrap gap-3 ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO: what the customers will see -->
+    <section class="bg-primary text-white text-center py-5" id="home">
+      <!-- Pulsing "Live now" badge (Bootstrap's spinner-grow animation) -->
+      <span class="badge text-bg-danger d-inline-block mb-3">
+        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+        Live now
+      </span>
+      <h1>Don't Miss out on <mark>BLACK FRIDAY!!!</mark></h1>
+      <p>First come first serve don't miss out!!</p>
+      <a href="#menu" class="btn btn-light btn-lg">SHOP NOW!</a>
+    </section>
+
+    <!-- CAROUSEL -->
+    <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <!-- Bottom dot indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- ALL THREE slides live inside ONE carousel-inner -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 (must have 'active') -->
+        <div class="carousel-item active">
+          <div class="img-fluid">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdekBmHPCnSzuZ9Su5gJu3xggD-pJMPJX3o_5QZlcaLw&s" class="object-fit-cover" alt="Slide 1">
+          </div>
+
+          <div class="carousel-caption">
+            <h4>Card title</h4>
+            <p>Some quick example text to build on the title.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="img-fluid">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzLayyq3oMPgwu4AM3k8SaHGgOmwV-ysogUhkGSZ8Z2A&s=10" class="object-fit-cover" alt="Slide 2">
+          </div>
+
+          <div class="carousel-caption">
+            <h4>Second slide</h4>
+            <p>Don't Miss Out.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="rounded mx-auto d-block">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-lrfE2aYb69mqHi7jE5PBHs6B8fCxw_x7gJYws7DY_w&s=10" class="object-fit-cover" alt="Third Slide">
+          </div>
+
+          <div class="carousel-caption">
+            <h4>Get in Touch</h4>
+            <p>Invite visitors to contact you or sign up.</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- end of carousel-inner -->
+
+      <!-- Left and right arrow controls (inside the carousel div) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+    <!-- Carousel end -->
+
+  </main>
+
+  <!-- FOOTER (id="contact" makes the Contact link in the navbar work) -->
+  <footer class="bg-dark text-light pt-5 pb-3 mt-5" id="contact">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Column 1: about the store -->
+        <div class="col-md-4">
+          <h5 class="fw-bold">TUSWA'S <span class="text-info">STORE</span></h5>
+          <p class="text-secondary">Great deals all year round, and even bigger ones on Black Friday.</p>
+        </div>
+
+        <!-- Column 2: quick links -->
+        <div class="col-6 col-md-4">
+          <h6 class="text-uppercase">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li class="mb-1"><a href="#home" class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">Home</a></li>
+            <li class="mb-1"><a href="#menu" class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">Menu</a></li>
+            <li class="mb-1"><a href="#about" class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">About</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: contact details -->
+        <div class="col-6 col-md-4">
+          <h6 class="text-uppercase">Contact</h6>
+          <ul class="list-unstyled text-secondary">
+            <li class="mb-1">Philippi, Cape Town</li>
+            <li class="mb-1">sethutuswa26@icloud.com</li>
+            <li class="mb-1">076 489 4633</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary">
+      <p class="text-center text-secondary small mb-0">© 2026 Tuswa's Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle: needed for the arrows, dots and auto-sliding -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

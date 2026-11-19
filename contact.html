@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuswa's Store | Contact</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">TUSWA'S <span class="text-info">STORE</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow-1 py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 animate__animated animate__fadeInUp">
+          
+          <div class="text-center mb-4">
+            <h1 class="fw-bold">Contact Us</h1>
+            <p class="text-secondary">Have a question about a product or want to place an order? Send us an email below.</p>
+          </div>
+
+          <div class="card border-0 shadow-sm p-4">
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label fw-semibold">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="emailAddress" class="form-label fw-semibold">Email Address</label>
+                  <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="subjectSelect" class="form-label fw-semibold">Subject</label>
+                  <select class="form-select" id="subjectSelect">
+                    <option selected>Product Enquiry</option>
+                    <option value="order">Order Status</option>
+                    <option value="support">Customer Support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <label for="messageBox" class="form-label fw-semibold">Message</label>
+                  <textarea class="form-control" id="messageBox" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <div class="d-grid">
+                  <button type="button" class="btn btn-primary btn-lg">Send Email</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4 mt-auto">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-4">
+          <h5 class="fw-bold">TUSWA'S <span class="text-info">STORE</span></h5>
+          <p class="text-secondary small mb-0">Your one-stop shop for quality everyday essentials and modern tech gear.</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold">Quick Links</h6>
+          <ul class="list-unstyled small mb-0">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="products.html" class="text-light text-decoration-none">Products</a></li>
+            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold">Contact Info</h6>
+          <p class="text-secondary small mb-1">Email: sethutuswa@icloud.com</p>
+          <p class="text-secondary small mb-0">Cape Town, South Africa</p>
+        </div>
+      </div>
+      <hr class="border-secondary my-3">
+      <p class="text-center text-secondary small mb-0">&copy; 2026 Tuswa's Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
